@@ -20,12 +20,17 @@
             <groupId>io.mendesf</groupId>
             <artifactId>engine</artifactId>
             <version>${project.version}</version>
-        </dependency>        
+        </dependency>
 
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter</artifactId>
             <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.jetbrains</groupId>
+            <artifactId>annotations</artifactId>
         </dependency>
     </dependencies>
 
@@ -41,5 +46,4 @@
             </plugin>
         </plugins>
     </build>
-    
 </project>

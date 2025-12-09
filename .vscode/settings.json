@@ -1,6 +1,9 @@
 {
     "cSpell.words": [
         "clusterdemo",
+        "indegree",
+        "indegrees",
         "mendesf"
-    ]
+    ],
+    "java.configuration.updateBuildConfiguration": "interactive"
 }
