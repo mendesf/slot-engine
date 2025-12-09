@@ -7,7 +7,6 @@ public enum SymbolFlag {
 	BLOCKER(1 << 2), // 0100
 	SCATTER(1 << 3); // 1000
 
-
 	private final int mask;
 
 	SymbolFlag(int mask) {

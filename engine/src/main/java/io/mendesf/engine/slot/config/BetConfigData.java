@@ -1,5 +1,4 @@
 package io.mendesf.engine.slot.config;
 
-public record BetConfigData(
-    int baseBet
-) {}
+public record BetConfigData(int baseBet) {
+}
