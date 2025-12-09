@@ -7,14 +7,14 @@ package io.mendesf.engine.rng;
  * "sequence id" fixo que é passado para o PCG32, gerando fluxos independentes
  * de números.
  *
- * Mantenha este enum pequeno e em nível de conceito: - DISPLAY => tudo
+ * Mantenha este enum pequeno e em nível de conceito: - REEL => tudo
  * relacionado a reels / símbolos / avalanches - GAMBLE => double-or-nothing,
  * coin flip, etc. - BONUS => triggers de bônus (se precisar futuramente) -
  * FEATURE => decisões internas de features (opcional futuro)
  */
 public enum StreamId {
 
-	DISPLAY(1L), GAMBLE(2L);
+	REEL(1L), GAMBLE(2L);
 	// Se quiser no futuro:
 	// BONUS(3L),
 	// FEATURE(4L),
