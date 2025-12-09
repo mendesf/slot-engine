@@ -1,0 +1,355 @@
+{
+  "bet": {
+    "baseBet": 10
+  },
+  "symbols": [
+    {
+      "name": "H1",
+      "flags": ["SUBSTITUTABLE"]
+    },
+    {
+      "name": "H2",
+      "flags": ["SUBSTITUTABLE"]
+    },
+    {
+      "name": "H3",
+      "flags": ["SUBSTITUTABLE"]
+    },
+    {
+      "name": "H4",
+      "flags": ["SUBSTITUTABLE"]
+    },
+    {
+      "name": "L5",
+      "flags": ["SUBSTITUTABLE"]
+    },
+    {
+      "name": "L6",
+      "flags": ["SUBSTITUTABLE"]
+    },
+    {
+      "name": "L7",
+      "flags": ["SUBSTITUTABLE"]
+    },
+    {
+      "name": "L8",
+      "flags": ["SUBSTITUTABLE"]
+    },
+    {
+      "name": "WR",
+      "flags": ["WILD"]
+    },
+    {
+      "name": "BLOCKER",
+      "flags": ["BLOCKER"]
+    }
+  ],
+  "reels": [
+    {
+      "name": "BaseGameReel",
+      "distributionType": "PROBABILITY",
+      "symbols": [
+        "H1",
+        "H2",
+        "H3",
+        "H4",
+        "L5",
+        "L6",
+        "L7",
+        "L8",
+        "WR",
+        "BLOCKER"
+      ],
+      "weights": [100, 100, 100, 100, 100, 100, 100, 100, 100, 100]
+    },
+    {
+      "name": "AvalancheReel",
+      "distributionType": "PROBABILITY",
+      "symbols": ["H1", "H2", "H3", "H4", "L5", "L6", "L7", "L8", "WR"],
+      "weights": [100, 100, 100, 100, 100, 100, 100, 100, 100]
+    }
+  ],
+  "displays": [
+    {
+      "name": "BaseGame",
+      "columns": 8,
+      "rows": 8,
+      "reels": [
+        "BaseGameReel",
+        "BaseGameReel",
+        "BaseGameReel",
+        "BaseGameReel",
+        "BaseGameReel",
+        "BaseGameReel",
+        "BaseGameReel",
+        "BaseGameReel"
+      ]
+    },
+    {
+      "name": "Avalanche",
+      "columns": 8,
+      "rows": 8,
+      "reels": [
+        "AvalancheReel",
+        "AvalancheReel",
+        "AvalancheReel",
+        "AvalancheReel",
+        "AvalancheReel",
+        "AvalancheReel",
+        "AvalancheReel",
+        "AvalancheReel"
+      ]
+    }
+  ],
+  "payTables": [
+    {
+      "name": "Default",
+      "type": "Cluster",
+      "entries": [
+        {
+          "symbol": "H1",
+          "tiers": [
+            {
+              "min": 5,
+              "max": 8,
+              "payout": 5
+            },
+            {
+              "min": 9,
+              "max": 12,
+              "payout": 6
+            },
+            {
+              "min": 13,
+              "max": 16,
+              "payout": 7
+            },
+            {
+              "min": 17,
+              "max": 20,
+              "payout": 8
+            },
+            {
+              "min": 21,
+              "payout": 10
+            }
+          ]
+        },
+        {
+          "symbol": "H2",
+          "tiers": [
+            {
+              "min": 5,
+              "max": 8,
+              "payout": 4
+            },
+            {
+              "min": 9,
+              "max": 12,
+              "payout": 5
+            },
+            {
+              "min": 13,
+              "max": 16,
+              "payout": 6
+            },
+            {
+              "min": 17,
+              "max": 20,
+              "payout": 7
+            },
+            {
+              "min": 21,
+              "payout": 9
+            }
+          ]
+        },
+        {
+          "symbol": "H3",
+          "tiers": [
+            {
+              "min": 5,
+              "max": 8,
+              "payout": 4
+            },
+            {
+              "min": 9,
+              "max": 12,
+              "payout": 5
+            },
+            {
+              "min": 13,
+              "max": 16,
+              "payout": 6
+            },
+            {
+              "min": 17,
+              "max": 20,
+              "payout": 7
+            },
+            {
+              "min": 21,
+              "payout": 9
+            }
+          ]
+        },
+        {
+          "symbol": "H4",
+          "tiers": [
+            {
+              "min": 5,
+              "max": 8,
+              "payout": 3
+            },
+            {
+              "min": 9,
+              "max": 12,
+              "payout": 4
+            },
+            {
+              "min": 13,
+              "max": 16,
+              "payout": 5
+            },
+            {
+              "min": 17,
+              "max": 20,
+              "payout": 6
+            },
+            {
+              "min": 21,
+              "payout": 7
+            }
+          ]
+        },
+        {
+          "symbol": "L5",
+          "tiers": [
+            {
+              "min": 5,
+              "max": 8,
+              "payout": 1
+            },
+            {
+              "min": 9,
+              "max": 12,
+              "payout": 2
+            },
+            {
+              "min": 13,
+              "max": 16,
+              "payout": 3
+            },
+            {
+              "min": 17,
+              "max": 20,
+              "payout": 4
+            },
+            {
+              "min": 21,
+              "payout": 5
+            }
+          ]
+        },
+        {
+          "symbol": "L6",
+          "tiers": [
+            {
+              "min": 5,
+              "max": 8,
+              "payout": 1
+            },
+            {
+              "min": 9,
+              "max": 12,
+              "payout": 2
+            },
+            {
+              "min": 13,
+              "max": 16,
+              "payout": 3
+            },
+            {
+              "min": 17,
+              "max": 20,
+              "payout": 4
+            },
+            {
+              "min": 21,
+              "payout": 5
+            }
+          ]
+        },
+        {
+          "symbol": "L7",
+          "tiers": [
+            {
+              "min": 5,
+              "max": 8,
+              "payout": 1
+            },
+            {
+              "min": 9,
+              "max": 12,
+              "payout": 2
+            },
+            {
+              "min": 13,
+              "max": 16,
+              "payout": 3
+            },
+            {
+              "min": 17,
+              "max": 20,
+              "payout": 4
+            },
+            {
+              "min": 21,
+              "payout": 5
+            }
+          ]
+        },
+        {
+          "symbol": "L8",
+          "tiers": [
+            {
+              "min": 5,
+              "max": 8,
+              "payout": 1
+            },
+            {
+              "min": 9,
+              "max": 12,
+              "payout": 2
+            },
+            {
+              "min": 13,
+              "max": 16,
+              "payout": 3
+            },
+            {
+              "min": 17,
+              "max": 20,
+              "payout": 4
+            },
+            {
+              "min": 21,
+              "payout": 5
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "stages": [
+    {
+      "name": "BaseGame",
+      "displays": [
+        "BaseGame",
+        "Avalanche"
+      ],
+      "selectionMode": "manual",
+      "payTable": "Default"
+    }
+  ]
+}
