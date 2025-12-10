@@ -47,7 +47,7 @@ public class PipelineBuilder {
 		return this;
 	}
 
-	public PipelineBuilder registerHandler(Command command, Step step, Handler<?, ?> handler) {
+	public <I, O> PipelineBuilder registerHandler(Command command, Step step, Handler<I, O> handler) {
 		if (!commands.contains(command)) {
 			throw new CommandNotRegisteredException(command);
 		}

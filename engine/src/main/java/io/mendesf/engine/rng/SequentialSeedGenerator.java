@@ -9,14 +9,14 @@ import java.util.concurrent.atomic.AtomicLong;
  */
 public final class SequentialSeedGenerator implements SeedGenerator {
 
-    private final AtomicLong counter;
+	private final AtomicLong counter;
 
-    public SequentialSeedGenerator(long initialSeed) {
-        this.counter = new AtomicLong(initialSeed);
-    }
+	public SequentialSeedGenerator(long initialSeed) {
+		this.counter = new AtomicLong(initialSeed);
+	}
 
-    @Override
-    public long nextSeed() {
-        return counter.getAndIncrement();
-    }
+	@Override
+	public long nextSeed() {
+		return counter.getAndIncrement();
+	}
 }

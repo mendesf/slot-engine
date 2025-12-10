@@ -8,6 +8,9 @@ import io.mendesf.engine.slot.config.SymbolConfig;
 
 public final class SymbolPicker {
 
+	private SymbolPicker() {
+	}
+
 	public static SymbolConfig pickSymbol(ReelConfig reel, RNG rng) {
 
 		List<Long> weights = reel.weights();
